@@ -1,0 +1,43 @@
+.faq-content{
+    width: 800px;
+    margin: 0 auto;
+}
+.faq-content h6{
+    font-family: 'Open Sans Semibold';
+    font-size: 22px;
+}
+.accordion-head i{
+    font-size: 2.5em;
+    float: right;
+}
+.faq-content .card-header {
+    background: #e8f6f5;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0.7rem 1.25rem;
+}
+.faq-content .card {
+    border: none !important;
+    padding-bottom: 3px;
+}
+.faq-content .card-header h3 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    font-family: 'Open Sans Semibold';
+}
+.faq-content .accordion-head i {
+    font-size: 1.5em;
+    float: right;
+    color: #222222;
+}
+.faq-content .card-block {
+    color: #222222;
+    padding: 15px 20px 30px;
+    font-family: 'Open Sans Light';
+}
+@media(min-width: 320px) and (max-width: 980px){
+    .faq-content{
+        width: 100%;
+    }
+}

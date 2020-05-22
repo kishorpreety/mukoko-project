@@ -1,0 +1,63 @@
+.story-video {
+    background: rgba(113,193,48,1);
+    background: -moz-linear-gradient(top, rgba(113,193,48,1) 0%, rgba(113,193,48,1) 48%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(113,193,48,1)), color-stop(40%, rgba(113,193,48,1)), color-stop(40%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(113,193,48,1) 0%, rgba(113,193,48,1) 48%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(113,193,48,1) 0%, rgba(113,193,48,1) 48%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(113,193,48,1) 0%, rgba(113,193,48,1) 48%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(113,193,48,1) 0%, rgba(113,193,48,1)48%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71c130', endColorstr='#ffffff', GradientType=0 );
+}
+.story-video {
+    padding: 50px 0px 0px 0px;
+}
+.story-video h3, .story-video p {
+    color: #ffffff;
+}
+.story-video p {
+    padding-bottom: 40px;
+}
+.modal-content {
+    background: #fff !important;
+    border: none !important;
+    padding: 8px 3px;
+    border-radius: 0;
+}
+.modal-dialog button {
+    text-align: right;
+    font-size: 24px;
+    display: block;
+    color: #a8a8a8;
+    width: 100%;
+}
+.space-lf{
+    margin-left: 5.5rem;
+}
+.video-section img {
+    margin-bottom: 20px;
+}
+.yellow-bg {
+    background: #ffe400;
+    padding: 30px;
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.yellow-bg span a {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #cdbb20;
+    font-size: 14px;
+    color: #222222;
+    float: right;
+}
+@media(max-width: 798px){
+    .space-lf{
+        margin-left: 0;
+    }
+    .yellow-bg span a{
+        float: none;
+    }
+}
