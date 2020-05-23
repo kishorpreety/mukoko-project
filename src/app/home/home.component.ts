@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import 'owl.carousel';
+//import 'owl.carousel';
 
 @Component({
   selector: 'app-home',
