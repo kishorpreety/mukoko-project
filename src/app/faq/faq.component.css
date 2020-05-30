@@ -1,3 +1,10 @@
+.faq-banner{
+    background: url('../../assets/image/faq/faq-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .faq-content{
     width: 800px;
     margin: 0 auto;

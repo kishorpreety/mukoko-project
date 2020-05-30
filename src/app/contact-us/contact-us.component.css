@@ -1,3 +1,122 @@
+.contact-banner{
+    background: url('../../assets/image/contact/contact-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact-info{
+    background: #e8f6f5;
+    padding: 50px 0px;
+}
+.contacts {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 2em 0;
+}
+.contacts section {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    border-right: dotted 1px;
+    border-top: none;
+    padding: 2em 2em;
+    text-align: left;
+    width: calc(100% / 3);
+}
+.contacts section {
+    border-color: rgba(67, 75, 86, 0.25);
+}
+.contacts section:last-child{
+    border-right: none;
+} 
+.contacts section h4{
+	color: #3b4c18;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.contacts section p {
+    color: #222222;
+    line-height: 18px;
+    text-align: left;
+}
+.connect-social h5 {
+    color: #3f6a67;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.connect-social a {
+    color: #222222;
+    padding: 0px 10px;
+}
+p.view-btn {
+    position: relative;
+    height: 100%;
+}
+
+.view-btn a {
+    position: absolute;
+    bottom: 40px;
+    background: #3f6a67;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.works section:nth-child(3n - 1) {
+    border-left-width: 0;
+}
+.works section:nth-child(-n + 3) {
+    border-top-width: 0;
+}
+.works section:nth-child(3n - 2) {
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+
+@media screen and (max-width: 736px){
+.contacts section {
+    padding: 3em 2em 1em 2em;
+}
+}
+@media (min-width: 768px) and (max-width: 980px){
+	.contacts section {
+		width: calc(100% / 3);
+	}
+}
+@media screen and (max-width: 767px){
+.contacts section {
+	padding: 3em 3em 1em 3em;
+	border-left: 0;
+	width: 100%;
+}
+.contacts section {
+    border-right: none;
+}
+
+.contacts section:first-child {
+    border-top-width: 0;
+    padding-top: 1em;
+}
+}
+.contact-form {
+    background: #f9f9f9;
+}
 .contact-form form {
     width: 800px;
     margin: 0 auto;
@@ -52,7 +171,7 @@
 form.contactFrom .site-btn {
     margin: 20px 0px;
 }
-@media(max-width:800px){
+@media ( max-width: 900px){
     .contact-form form {
         width: 100%;
     }

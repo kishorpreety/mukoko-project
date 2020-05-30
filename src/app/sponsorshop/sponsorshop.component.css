@@ -1,0 +1,20 @@
+.sponsorshop-banner{
+    background: url('../../assets/image/sponsorshop/sponsorshop-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.production-section .headline-pro {
+    padding-bottom: 30px;
+}
+section.production-section .headline-pro a {
+    color: #666666;
+    font-size: 14px;
+    margin-right: 15px;
+    font-family: 'Open Sans Semibold';
+}
+section.production-section .headline-pro a:hover, section.production-section .headline-pro a:focus,
+section.production-section .headline-pro a:active, section.production-section .headline-pro a.active
+{
+    border-bottom: 3px solid #72c130;
+}

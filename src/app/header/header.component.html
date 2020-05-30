@@ -4,17 +4,17 @@
         <div class="canvas__close">
             <span class="fa fa-times-circle-o"></span>
         </div>
-        <div class="offcanvas__logo">
+        <!--div class="offcanvas__logo">
             <a href="#"><img src="/assets/image/footer-logo.png" alt=""></a>
-        </div>
+        </div-->
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="/about-us">About Us</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Sponser Now</a></li>
-                <li><a href="/partner">Partner Us</a></li>
-                <li><a href="/contact-us">Contact Us</a></li>
+                <li routerLinkActive="active"><a routerLink="/">Home</a></li>
+                <li routerLinkActive="active"><a routerLink="/about-us" >About Us</a></li>
+                <li routerLinkActive="active"><a routerLink="/farmshop">Shop</a></li>
+                <li routerLinkActive="active"><a routerLink="/sponsorshop">Sponser Now</a></li>
+                <li routerLinkActive="active"><a routerLink="/partner">Partner Us</a></li>
+                <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
                 <li class="social">
                     <span>Follow us</span>
                     <a href="" class="face"><i class="fa fa-facebook"></i></a>
@@ -26,38 +26,79 @@
         <div id="mobile-menu-wrap"></div>
     </div>
     <!-- Offcanvas Menu End -->
-
-    <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="#"><img src="/assets/image/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Sponser Now</a></li>
-                            <li><a href="/partner">Partner Us</a></li>
-                            <li><a href="/contact-us">Contact Us</a></li>
-                            <li class="social">
-                                <span>Follow us</span>
-                                <a href="" class="face"><i class="fa fa-facebook"></i></a>
-                                <a href="" class="twit"><i class="fa fa-twitter"></i></a>
-                                <a href="" class="link"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
+<!-- First view -->
+<div *ngIf="hasRoute('home')">
+   <!-- Header Section Begin -->
+   <header class="header-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <a href="#"><img src="/assets/image/logo.png" alt=""></a>
                 </div>
             </div>
-            <div class="canvas__open">
-                <span class="fa fa-bars"></span>
+            <div class="col-lg-9 col-md-9">
+                <nav class="header__menu">
+                    <ul>
+                        <li routerLinkActive="active"><a routerLink="/">Home</a></li>
+                        <li routerLinkActive="active"><a routerLink="/about-us" >About Us</a></li>
+                        <li routerLinkActive="active"><a routerLink="/farmshop">Shop</a></li>
+                        <li routerLinkActive="active"><a routerLink="/sponsorshop">Sponser Now</a></li>
+                        <li routerLinkActive="active"><a routerLink="/partner">Partner Us</a></li>
+                        <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
+                        <li class="social">
+                            <span>Follow us</span>
+                            <a href="" class="face"><i class="fa fa-facebook"></i></a>
+                            <a href="" class="twit"><i class="fa fa-twitter"></i></a>
+                            <a href="" class="link"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </header>
-    <!-- Header End -->
+        <div class="canvas__open">
+            <span class="fa fa-bars"></span>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+</div>
+
+<!-- Second view activated when the route doesn't contain the home route -->
+<div *ngIf="!hasRoute('home')">
+   <!-- Header Section Begin -->
+   <header class="header-section second-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <a href="#"><img src="/assets/image/footer-logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <nav class="header__menu">
+                    <ul>
+                        <li><a routerLink="/">Home</a></li>
+                        <li routerLinkActive="active"><a routerLink="/about-us" >About Us</a></li>
+                        <li routerLinkActive="active"><a routerLink="/farmshop">Shop</a></li>
+                        <li routerLinkActive="active"><a routerLink="/sponsorshop">Sponser Now</a></li>
+                        <li routerLinkActive="active"><a routerLink="/partner">Partner Us</a></li>
+                        <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
+                        <li class="social">
+                            <span>Follow us</span>
+                            <a href="" class="face"><i class="fa fa-facebook"></i></a>
+                            <a href="" class="twit"><i class="fa fa-twitter"></i></a>
+                            <a href="" class="link"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <span class="fa fa-bars"></span>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+</div>
+    

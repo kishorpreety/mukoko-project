@@ -1,0 +1,6 @@
+.disclaimer-banner{
+    background: url('../../assets/image/legal/disclaimer-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}

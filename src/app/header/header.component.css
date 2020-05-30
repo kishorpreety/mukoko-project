@@ -170,12 +170,12 @@
 	.canvas__open {
 		display: block;
 		font-size: 20px;
-		color: #ffffff;
+		color: #ffc824;
 		height: 30px;
 		width: 30px;
 		line-height: 30px;
 		text-align: center;
-		border: 1px solid #ffffff;
+		border: 1px solid #ffc824;
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
@@ -183,13 +183,13 @@
 	}
 	.offcanvas__menu__wrapper {
 		display: block;
-		width: 300px;
+		width: 100%;
 		position: fixed;
-		left: -300px;
-		top: 0;
+		right: -300px;
+		top: 12%;
 		background: #ffc824;
 		z-index: 999;
-		height: 100%;
+		height: auto;
 		overflow-y: auto;
 		padding-left: 30px;
 		padding-bottom: 30px;
@@ -202,7 +202,7 @@
 	}
 	.offcanvas__menu__wrapper.show__offcanvas__menu {
 		opacity: 1;
-		left: 0;
+		right: 0;
 	}
 	.offcanvas__menu__wrapper .canvas__close {
 		font-size: 30px;
@@ -234,13 +234,18 @@
 	}
 	.offcanvas__menu__wrapper .slicknav_nav ul {
 		margin: 0;
+		list-style: none;
+	}
+	.offcanvas__menu__wrapper nav.slicknav_nav li {
+		margin: 10px 0px;
 	}
 	.offcanvas__menu__wrapper .slicknav_nav a {
 		color: #ffffff;
-		font-size: 16px;
-		font-weight: 500;
+		font-size: 24px;
+		font-weight: 300;
 		margin: 0;
-		border-bottom: 1px solid #e1e1e1;
+		border-bottom: none;
+		font-family: 'Roboto';
 	}
 	.offcanvas__menu__wrapper .slicknav_nav a:hover {
 		border-radius: 0;
@@ -289,4 +294,43 @@
 		display: inline-block;
 		margin-right: 5px;
 	}
+	.offcanvas__menu__wrapper li.social {
+		display: block;
+		border-top: 2px solid #fff;
+		padding: 20px 0px;
+	}
+	
+	.offcanvas__menu__wrapper li.social span {
+		display: block;
+		color: #fff;
+	}
+	
+	.offcanvas__menu__wrapper li.social a {
+		padding: 10px 10px !important;
+		margin: 10px 0px !important;
+		font-size: 20px !important;
+	}
+}
+
+/*second header*/
+header.header-section.second-header {
+    background: #ffffff;
+    box-shadow: 4.9px 1px 6px 0 rgba(0, 0, 0, 0.35);
+}
+.second-header .header__logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.second-header .header__menu li a {
+    color: #222 !important;
+}
+header.header-section.second-header.scroll-top-wrapper.show {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.second-header li.social span {
+    color: #222 !important;
 }

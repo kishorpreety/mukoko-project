@@ -1,24 +1,9 @@
-/*Inner banner start*/
-.bradcam_area {
-    background-size: cover;
-    background-position: center center;
-    padding: 111px 0 0px 0;
+.about-banner{
+    background: url('../../assets/image/about/about-banner.png');
     background-repeat: no-repeat;
-    position: relative;
-    z-index: 0;
-    
-  }
-  .bradcam_area::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    z-index: -1;
-    content: '';
-  }
-
+    background-size: cover;
+    background-position: center;
+}
 /*safe section Stat*/
 section.safe-section {
     box-shadow: 0px 9px 13px 0 rgba(182, 212, 210, 0.35);
@@ -29,4 +14,110 @@ section.safe-section {
 	color: #196f69;
 	font-size: 35px;
 	padding-bottom: 34px;
+}
+.about-section{
+    padding: 50px 0px;
+}
+section.about-section h6 {
+    color: #6c4c42;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.vission-mission{
+    background-color: #ffc824;
+    padding: 35px 0px;
+}
+.safe-section .heading {
+    padding-bottom: 50px;
+}
+.vissions section {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    border-left: dotted 1px;
+    border-top: dotted 1px;
+    padding: 2em 2em;
+    text-align: left;
+    width: calc(100% / 2);
+    display: inline-block;
+}
+.vissions section {
+    border-color: rgba(67, 75, 86, 0.25);
+}
+.vissions section h4{
+	color: #222222;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.vissions section p {
+    color: #222222;
+    line-height: 18px;
+    text-align: left;
+}
+.vissions-icon {
+    margin: 2em 0;
+}
+.vissions section:nth-child(4n - 3) {
+    border-left-width: 0;
+}
+.vissions section:nth-child(-n + 4) {
+    border-top-width: 0;
+}
+.vissions section:nth-child(4n - 3) {
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+.icon-block {
+    margin-bottom: 20px;
+}
+/*about-us*/
+section.our-team{
+    padding: 50px 0px;
+    background: #fff;
+}
+section.our-team .headline h6 {
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+.OurTeam-section .card {
+    text-align: center;
+}
+
+.OurTeam-section .icon-team {
+    width: 100%;
+    max-width: 9rem;
+    max-height: 9rem;
+    margin: 0 auto;
+}
+.icon-team span {
+    padding: 25% 22%;
+    background: #ececec;
+    border-radius: 50%;
+    vertical-align: sub;
+}
+.icon-team span i.fa{
+    color: #c9caca;
+    font-size: 40px;
+}
+.OurTeam-section .card {
+    border: none;
+    margin-top: 30px;
+}
+.OurTeam-section .card-body {
+    margin-top: 30px;
+}
+.team-social a {
+    display: inline;
+    padding: 0px 5px;
+}
+.team-social a i {
+    color: #626262;
+}
+.OurTeam-section .card-text{
+    margin-bottom: 5px;
 }
