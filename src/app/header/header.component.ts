@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import * as jquery from 'jquery';
+//import * as jquery from 'jquery';
 declare var jQuery: any;
 @Component({
   selector: 'app-header',
