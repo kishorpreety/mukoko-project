@@ -43,7 +43,7 @@
 }
 .contacts section:last-child{
     border-right: none;
-} 
+}
 .contacts section h4{
 	color: #3b4c18;
     font-size: 22px;
@@ -175,4 +175,8 @@ form.contactFrom .site-btn {
     .contact-form form {
         width: 100%;
     }
+}
+
+.status-error{
+  color: red;
 }

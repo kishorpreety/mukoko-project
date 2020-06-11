@@ -144,6 +144,9 @@ ol {
 .default-darkGreen{
 	color: #3b4c18;
 }
+.default-lightGreen{
+	color: #72c130;
+}
 .default-darkGray{
 	color: #222222;
 }
@@ -177,7 +180,7 @@ ol {
     color: #fff;
     padding: 0.6rem 2rem;
     font-family: 'Open Sans Semibold';
-    font-size: 13px;
+    font-size: 17px;
 }
 .green-lg-btn:hover, .green-sm-btn:hover{
 	background-color: #599725;
@@ -236,12 +239,12 @@ ol {
     font-weight: 300;
 }
 .openSansSemi{
-    font-family: 'Open Sans Semibold';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 500;
 }
 .openSansBold{
-    font-family: 'Open Sans Bold';
+    font-family: 'Open Sans';
     font-weight: 700;
 }
 /* Preloder */
@@ -322,7 +325,7 @@ ol {
 	opacity: 1 !important;
 }
 .set-bg::after{
-	content: ""; 
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -334,8 +337,8 @@ ol {
 .hero__slider.owl-carousel .owl-dots {
 	position: absolute;
 	width: auto;
-	left: 20%;
-	bottom: 118px;
+	left: 24%;
+	bottom: 180px;
 	text-align: center;
 }
 
@@ -535,7 +538,7 @@ span.loc .fa{
     padding-right: 10px;
 }
 span.price{
-    color: #72c130; 
+    color: #72c130;
 }
 .see .fa{
     padding-left: 10px;

@@ -1,16 +1,17 @@
 <!--home -->
 <section class="hero-section">
     <div class="hero__slider owl-carousel set-bg">
-        <!--img src="../../assets/image/home/home-banner1.jpg" alt=""-->   
+        <!--img src="../../assets/image/home/home-banner1.jpg" alt=""-->
         <owl-carousel [options]="carouselOptions" [carouselClasses]="['owl-theme', 'row', 'sliding']">
 			<div class="hero__item" >
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
-                                <h5>Starting At Only $ 2.8/month</h5>
-                                <h2>Welcome to the best<br /> hosting company</h2>
-                                <a href="#" class="green-lg-btn">Get started now</a>
+                                <h2><span style="color: #ffc824">{{ homebanner.uptitle }}</span><br />
+                                    <span  style="color: #72c130;">{{ homebanner.subtitle }}</span></h2>
+                                <p>{{homebanner.partext}}</p>
+                                <a href="{{homebanner.anchorLink}}" class="green-lg-btn">{{homebanner.anchorText}} <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -20,33 +21,34 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="hero__text">
-                                <h5>Starting At Only $ 2.8/month</h5>
-                                <h2>Welcome to the best<br /> hosting compan111y</h2>
-                                <a href="#" class="green-lg-btn">Get started nsssow</a>
-                            </div>
+                          <div class="hero__text">
+                            <h2><span style="color: #ffc824">{{ homebannerSec.uptitle }}</span><br />
+                                <span  style="color: #72c130;">{{ homebannerSec.subtitle }}</span></h2>
+                            <p>{{homebannerSec.partext}}</p>
+                            <a href="{{homebannerSec.anchorLink}}" class="green-lg-btn">{{homebannerSec.anchorText}} <i class="fa fa-angle-right"></i></a>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-                      
+
         </owl-carousel>
     </div>
 </section>
-<!-- Home Section End --> 
+<!-- Home Section End -->
   <!-- opportunities Section Begin -->
-   <section class="opportunities-section spad">
+   <section class="opportunities-section spad" *ngIf="opportunities">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title text-left">
-                    <h3 class="roboto">New opportunities</h3>
-                    <p class="roboto">Invest on your convenience. A new way to invest in agriculture. </p>
+                    <h3 class="roboto">{{opportunities.header}}</h3>
+                    <p class="roboto">{{opportunities.headerPara}}</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-6" >
                 <div class="opportunities__item">
                         <img src="/../assets/image/home/new-opp-1.png" class="img-responsive" alt="">
                     <div class="opportunities-sub">
@@ -112,7 +114,7 @@
 <!--HOW IT WORK START-->
         <section class="work-start-section">
             <div class="container">
-                <h4 class="text-center work-heading roboto">How it works</h4>
+                <h4 class="text-center work-heading roboto">{{HowItworks.title}}</h4>
                 <div class="works">
                     <section>
                         <span class="work-icon"><img src="/../assets/image/home/join-mukoko.png" alt="join Mukoko"></span>
@@ -136,26 +138,26 @@
                     </section>
                 </div>
                 <div class="work-info-foo text-center">
-                    <h4 class="openSansSemi">Get instant answers for the most common questions here.</h4>
-                    <a class="btn green-lg-btn roboto" href="#">Frequently Asked Questions</a>
+                    <h4 class="openSansSemi">{{HowItworks.para}}</h4>
+                    <a class="btn green-lg-btn roboto" href="{{HowItworks.freqLink}}">{{HowItworks.freqTxt}}</a>
                 </div>
             </div>
         </section>
   <!--HOW IT WORK END-->
- 
+
   <!--What People say start-->
         <section class="people-section">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="/../assets/image/home/say-about.png" class="img-responsive" alt="What people say about us">
+                        <img src="/../assets/image/home/{{peopleSay.img}}" class="img-responsive" alt="What people say about us">
                     </div>
                     <div class="col-sm-6">
                         <div class="people-head text-left">
-                            <h4 class="default-mustard roboto"> What people say about us</h4>
-                            <h6 class="default-mustard openSansSemi">Don’t just take our word for it</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                            <a class="btn mustard-lg-btn roboto" routerLink="/story"><i class="fa fa fa-play-circle"></i> See Farmers Stories</a>
+                            <h4 class="default-mustard roboto"> {{peopleSay.title}}</h4>
+                            <h6 class="default-mustard openSansSemi">{{peopleSay.subTitle}}</h6>
+                            <p>{{peopleSay.para}} </p>
+                            <a class="btn mustard-lg-btn roboto" routerLink="{{peopleSay.btnHref}}"><i class="fa fa fa-play-circle"></i> {{peopleSay.btnText}}</a>
                         </div>
                     </div>
                 </div>
@@ -169,12 +171,12 @@
                         <div class="row">
                             <div class="col-sm-8">
                                 <div class="safe-head text-left">
-                                    <h4 class="roboto"> Safe, Confidential and Insured</h4> 
-                                    <p class="openSansSemi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </p>
+                                    <h4 class="roboto"> {{safeSection.title}}</h4>
+                                    <p class="openSansSemi">{{safeSection.desc}} </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                    <img src="/../assets/image/home/safe.png" class="img-responsive" alt="What people say about us">
+                                    <img src="/../assets/image/home/{{safeSection.img}}" class="img-responsive" alt="What people say about us">
                             </div>
                         </div>
                     </div>

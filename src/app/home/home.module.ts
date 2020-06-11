@@ -5,12 +5,13 @@ import { HomeComponent } from './home.component';
 import { OwlModule } from 'ngx-owl-carousel';
 
 
+
 @NgModule({
   declarations: [HomeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
-	OwlModule
+	  OwlModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
