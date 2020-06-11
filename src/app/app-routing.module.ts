@@ -19,6 +19,10 @@ const routes: Routes = [
   { path: 'terms-of-sponsorship', loadChildren: () => import('./terms-of-sponsorship/terms-of-sponsorship.module').then(m => m.TermsOfSponsorshipModule) },
   { path: 'sponsorshop', loadChildren: () => import('./sponsorshop/sponsorshop.module').then(m => m.SponsorshopModule) },
   { path: 'farmshop', loadChildren: () => import('./farmshop/farmshop.module').then(m => m.FarmshopModule) },
+  { path: 'cart', loadChildren: () => import('./cart/cart.module').then(m => m.CartModule) },
+  { path: 'checkout', loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule) },
+  { path: 'confirmation-page', loadChildren: () => import('./confirmation-page/confirmation-page.module').then(m => m.ConfirmationPageModule) },
+  { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) }
    /*{ path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
   { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)},*/
   ];

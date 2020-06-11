@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-sponsorshop',
-  templateUrl: './sponsorshop.component.html',
-  styleUrls: ['./sponsorshop.component.css']
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.css']
 })
-export class SponsorshopComponent implements OnInit {
-  title = 'Sponsorshop - Mukoko';
+export class CheckoutComponent implements OnInit {
+  title = 'Sponsorshop Checkout - Mukoko';
   constructor(
     private titleService: Title,
     private metaTagService: Meta
@@ -20,4 +19,5 @@ export class SponsorshopComponent implements OnInit {
       { name: 'description', content: 'Add song template' }
     );
   }
+
 }

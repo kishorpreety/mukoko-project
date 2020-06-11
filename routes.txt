@@ -1,0 +1,3 @@
+/sponsorshop/1
+/sponsorshop/555
+/sponsorshop/556

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -8,8 +9,10 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class DetailsComponent implements OnInit {
   title = 'Sponsorshop Details - Mukoko';
+  public detailId = this.route.snapshot.paramMap.get('id');
   constructor(
-    private titleService: Title,
+    private route: ActivatedRoute,
+	private titleService: Title,
     private metaTagService: Meta
   ) { }
 

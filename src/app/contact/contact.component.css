@@ -1,0 +1,65 @@
+.spons-contact-banner{
+  /*background: url('../../assets/image/partner/partner-banner.png');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact-form form {
+  width: 800px;
+  margin: 0 auto;
+}
+.contact-form h3 {
+  color: #222222;
+  font-family: 'Roboto';
+  font-size: 32px;
+  margin: 10px 0px;
+  font-weight: 400;
+}
+.contact-form h6{
+  color: #222222;
+  font-family: 'Roboto';
+  font-size: 22px;
+  margin: 10px 0px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.all-label{
+  color: #222222;
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+.input-list label {
+  display: block;
+  padding: 5px 0px;
+  margin: 0 0 10px 0;
+  color: #7f7f7f;
+  font-family: 'Open Sans';
+  font-size: 14px
+}
+.input-list input {
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.input-list textarea {
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+  min-height: 175px;
+}
+form.contactFrom .site-btn {
+  margin: 20px 0px;
+}
+@media(max-width:800px){
+  .contact-form form {
+      width: 100%;
+  }
+}
