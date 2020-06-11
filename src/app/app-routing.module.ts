@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'privacy-policy', loadChildren: () => import('./privacy-policy/privacy-policy.module').then(m => m.PrivacyPolicyModule) },
   { path: 'disclaimer', loadChildren: () => import('./disclaimer/disclaimer.module').then(m => m.DisclaimerModule) },
   { path: 'terms-of-use', loadChildren: () => import('./terms-of-use/terms-of-use.module').then(m => m.TermsOfUseModule) },
+  // tslint:disable-next-line: max-line-length
   { path: 'terms-of-sponsorship', loadChildren: () => import('./terms-of-sponsorship/terms-of-sponsorship.module').then(m => m.TermsOfSponsorshipModule) },
   { path: 'sponsorshop', loadChildren: () => import('./sponsorshop/sponsorshop.module').then(m => m.SponsorshopModule) },
   { path: 'farmshop', loadChildren: () => import('./farmshop/farmshop.module').then(m => m.FarmshopModule) },
@@ -22,7 +23,7 @@ const routes: Routes = [
   { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)},*/
   ];
 
-  @NgModule({
+@NgModule({
     imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabled'
     })],

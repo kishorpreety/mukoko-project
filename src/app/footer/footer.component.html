@@ -1,43 +1,43 @@
 <footer class="footer-section">
-    <div class="semi-footer">    
-        <img src="/../assets/image/home/home-footer.png" class="img-responsive" alt="">
+    <div class="semi-footer">
+        <img src="/../assets/image/home/{{footer.topImg}}" class="img-responsive" alt="">
     </div>
     <div class="main-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="foo-logo">
-                        <img src="/../assets/image/footer-logo.png" alt="Mukoko logo">
+                        <img src="/../assets/image/{{footer.logo}}" alt="Mukoko logo">
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="foo-list roboto">
-                        <h6 class="roboto">Company</h6>
-                        <a routerLink="/about-us">About Us</a>
-                        <a routerLink="/story">Stories</a>
-                        <a routerLink="">Online Shop </a>
-                        <a routerLink="">Sponser Now</a>
-                        <a routerLink="/partner">Partner Us</a>
-                        <a routerLink="/faq">FAQs</a>
-                        <a routerLink="">Blog</a>
-                        <a routerLink="/contact-us">Contact Us</a>
+                        <h6 class="roboto">{{footer.company}}</h6>
+                        <a routerLink="{{footer.aboutLink}}">{{footer.about}}</a>
+                        <a routerLink="{{footer.storiesLink}}">{{footer.stories}}</a>
+                        <a routerLink="{{footer.onlineshopLink}}">{{footer.onlineShop}} </a>
+                        <a routerLink="{{footer.sponserLink}}">{{footer.sponser}}</a>
+                        <a routerLink="{{footer.partnerLink}}">{{footer.partner}}</a>
+                        <a routerLink="{{footer.faqsLink}}">{{footer.faqs}}</a>
+                        <a routerLink="{{footer.blogLink}}">{{footer.blog}}</a>
+                        <a routerLink="{{footer.contactLink}}">{{footer.contact}}</a>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="foo-list roboto">
-                        <h6 class="roboto">Legal</h6>
-                        <a routerLink="/privacy-policy">Privacy Policy</a>
-                        <a routerLink="/disclaimer">Disclaimer</a>
-                        <a routerLink="/terms-of-use">Terms of use</a>
-                        <a routerLink="/terms-of-sponsorship">Terms of Sponsorship</a>
+                        <h6 class="roboto">{{footer.legal}}</h6>
+                        <a routerLink="{{footer.partnerLink}}">{{footer.privacy}} </a>
+                        <a routerLink="{{footer.disclaimerLink}}">{{footer.disclaimer}}</a>
+                        <a routerLink="{{footer.termsUseLink}}">{{footer.termsUse}} </a>
+                        <a routerLink="{{footer.termssponsorshipLink}}">{{footer.termssponsorship}} </a>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="foo-list roboto">
-                        <h6 class="roboto">Contact</h6>
+                        <h6 class="roboto">{{footer.cotactHead}}</h6>
                         <address class="roboto">
-                            info@pamukoko.com<br/>
-                            +234 (0) 706 000 0000
+                            {{footer.adress}}<br/>
+                            {{footer.tel}}
                         </address>
                         <div class="social-icon">
                             <a href="" class="face"><i class="fa fa-facebook"></i></a>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="copy-right text-center">
-                <p class="roboto"><i class="fa fa-lock"></i> Secured with SSL  | Copyright &copy; 2020 Mukoko Platfom. All rights reserved.</p>
+                <p class="roboto"><i class="fa fa-lock"></i>{{footer.copyrighttext}}</p>
             </div>
         </div>
     </div>

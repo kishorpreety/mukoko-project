@@ -96,11 +96,11 @@
 
 .header__menu ul li a {
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 18px;
     text-transform: capitalize;
     font-family: Roboto;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
     position: relative;
     z-index: 1;
     font-weight: normal;
@@ -299,12 +299,12 @@
 		border-top: 2px solid #fff;
 		padding: 20px 0px;
 	}
-	
+
 	.offcanvas__menu__wrapper li.social span {
 		display: block;
 		color: #fff;
 	}
-	
+
 	.offcanvas__menu__wrapper li.social a {
 		padding: 10px 10px !important;
 		margin: 10px 0px !important;

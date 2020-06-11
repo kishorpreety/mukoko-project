@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-terms-of-sponsorship',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./terms-of-sponsorship.component.css']
 })
 export class TermsOfSponsorshipComponent implements OnInit {
-
-  constructor() { }
+   title = 'Terms Of Sponsorship - Mukoko';
+  constructor(
+    private titleService: Title,
+    private metaTagService: Meta
+  ) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
+    this.metaTagService.updateTag(
+      { name: 'description', content: 'Add song template' }
+    );
   }
 
 }

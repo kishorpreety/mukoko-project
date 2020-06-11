@@ -5,7 +5,7 @@
     height: 100%;
 }
 .set-bg{
-	background: url(../../assets/image/home/home-banner1.jpg);
+	background: url(../../assets/image/home/home-banner1.png) #72c130;
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	background-position: top center;
@@ -23,7 +23,7 @@
 }
 
 .hero__item {
-	height: 700px;
+	height: 840px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -33,26 +33,26 @@
 }
 
 .hero__item .hero__text {
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-left: 50px;
 }
 
-.hero__item .hero__text h5 {
+.hero__item .hero__text p {
 	color: #ffffff;
-	opacity: 0.7;
 	font-weight: 500;
-	margin-bottom: 15px;
+	margin-bottom: 50px;
 	position: relative;
-	top: 100px;
-	opacity: 0;
+	top: 0px;
+  font-family:'Roboto';
 	-webkit-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-size: 18px;
 }
 
 .hero__item .hero__text h2 {
-	color: #ffffff;
-	font-weight: 700;
+	color: #ffc824;
+	font-weight: 300;
 	line-height: 47px;
 	text-transform: uppercase;
 	margin-bottom: 28px;
@@ -63,7 +63,9 @@
 	-o-transition: all 0.6s ease-out;
 	transition: all 0.6s ease-out;
 }
-
+.hero__item a.green-lg-btn{
+   font-family: 'Roboto' !important;
+}
 .hero__item .hero__text .primary-btn {
 	position: relative;
 	top: 100px;
@@ -94,7 +96,8 @@
 
 .opportunities-section {
 	background: #72c130;
-	padding-bottom: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .opportunities-section .section-title{
     margin-bottom: 35px;
@@ -126,7 +129,7 @@ span.loc .fa{
     padding-right: 10px;
 }
 span.price{
-    color: #72c130; 
+    color: #72c130;
 }
 .see .fa{
     padding-left: 10px;
