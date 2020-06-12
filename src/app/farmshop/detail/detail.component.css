@@ -1,0 +1,144 @@
+
+.sponsorshop-details-banner{
+    background: url('/../assets/image/sponsorshop/sponsorshop-banner.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.details-section{
+  background: #f7f7f7;
+  padding: 50px 0px;
+}
+.product-id, .pro-info {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+.product-title{
+  display: inline;
+  font-size: 38px;
+  color: #222222;
+  font-family: 'roboto';
+  word-break: break-word;
+  width: 80%;
+  float: left;
+}
+.pro-cost{
+  display: inline;
+  text-align: right;
+  float: right;
+  font-size: 36px;
+}
+.pro-cost > pre {
+  font-size: 14px;
+  color: #4d4d4d;
+  text-align: left;
+  font-family: 'open Sans';
+}
+.pro-info ul{
+   display: block;
+}
+.pro-info ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.pro-info .save-item{
+  text-align: right;
+}
+span.save-item i {
+  padding-right: 10px;
+}
+.pro-info-detials {
+  background: #ffffff;
+  border-top: 2px solid #f7f7f7;
+  padding: 20px;
+}
+
+.pro-info-detials ul {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+}
+
+.pro-info-detials ul li {
+  display: inline-block;
+  padding: 0px 15px;
+  width: 23%;
+  font-size: 27.5px;
+  color: #222222;
+  text-align: left;
+}
+
+.pro-info-detials ul li span {
+  display: block;
+  font-size: 12px;
+  color: #4d4d4d;
+  text-align: left;
+}
+
+li.add-to-cart-btn {
+  /* float: right; */
+  width: 30% !important;
+  text-align: right !important;
+}
+
+li.add-to-cart-btn a {
+  color: #fff;
+}
+section.product-content {
+  padding: 40px 0px;
+  color: #222222;
+}
+section.product-content h3 {
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+.fa-insurance{
+  background: url('/../assets/image/sponsorshop/insurance-covered.png');
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 20px;
+}
+@media(min-width: 769px) and (max-width: 1024px){
+  .pro-cost{
+    text-align: left !important;
+    float: left;
+  }
+  .pro-info-detials ul li, .pro-info-detials ul li.add-to-cart-btn {
+     width: 50% !important;
+  }
+  .pro-info-detials ul li.add-to-cart-btn a{
+    width: 100% !important;
+ }
+}
+@media(min-width: 320px) and (max-width: 768px){
+  .product-title{
+    width: 100%;
+  }
+  .pro-cost {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left !important;
+    }
+    .pro-info ul li {
+      display: block;
+      padding: 0 10px;
+    }
+    span.save-item {
+     text-align: left !important;
+    }
+    .pro-info-detials li {
+      display: block !important;
+      width: 100% !important;
+      float: none !important;
+      text-align: left !important;
+      padding: 10px 0px !important;
+  }
+  .pro-info-detials li a{
+    width: 100% !important;
+  }
+}
+
+
+

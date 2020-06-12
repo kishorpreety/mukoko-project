@@ -1,6 +1,27 @@
 
-
+.checkout-banner{
+  background: url('../../assets/image/checkout-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+}
+.main-heading{
+  padding-bottom: 25px;
+  font-size: 28px;
+  font-family: 'Roboto';
+}
 /*---CHECKOUT CSS---*/
+.cart-totals {
+  background: #f7f7f7;
+  padding: 40px 25px;
+}
+.cart-totals h3 {
+  font-size: 18px;
+  color: #17140f;
+  font-family: 'open sans';
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
 form.billingFrom {
   margin-bottom: 100px;
 }
@@ -61,10 +82,26 @@ form.cartForm tr td {
   width: auto !important;
 }
 form.cartForm tr:first-child{
-  
+  border-top: none;
 }
 form.cartForm tr{
-  border-top: 1px solid #dfdfdf;
+  border-top: 1px solid #b9b9b9;
+}
+.cart-totals form table tr td {
+  padding: 15px 0px;
+}
+.cart-totals form table tr td span {
+  font-size: 14px;
+  color: #222222;
+}
+.cart-totals form table td:nth-child(2) {
+  padding-left: 10px !important;
+  padding-right: 20px !important;
+}
+.cart-edit a{
+  color: #929292;
+  font-size: 12px;
+
 }
 @media(max-width:800px){
   .billingFrom form {

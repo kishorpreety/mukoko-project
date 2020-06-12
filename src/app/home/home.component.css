@@ -33,7 +33,7 @@
 }
 
 .hero__item .hero__text {
-	padding-top: 80px;
+	padding-top: 0px;
 	padding-left: 50px;
 }
 
@@ -97,7 +97,10 @@
 .opportunities-section {
 	background: #72c130;
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 0px;
+}
+.opportunities__item img{
+	width: 100%;
 }
 .opportunities-section .section-title{
     margin-bottom: 35px;

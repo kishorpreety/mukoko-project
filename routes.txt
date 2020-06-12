@@ -1,3 +1,7 @@
 /sponsorshop/1
 /sponsorshop/555
 /sponsorshop/556
+/farmshop/1
+/farmshop/555
+/farmshop/556
+

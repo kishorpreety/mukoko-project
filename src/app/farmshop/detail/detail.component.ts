@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  title = 'Farmshop Detail - Mukoko';
+  public detailId = this.route.snapshot.paramMap.get('id');
+  constructor(
+    private route: ActivatedRoute,
+	private titleService: Title,
+    private metaTagService: Meta
+  ) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
+    this.metaTagService.updateTag(
+      { name: 'description', content: 'Add song template' }
+    );
   }
-
 }

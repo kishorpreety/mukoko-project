@@ -1,0 +1,6 @@
+.confirmation-banner{
+    background: url('../../assets/image/order-confirmation.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+  }

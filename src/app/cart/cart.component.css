@@ -1,3 +1,9 @@
+.cart-banner{
+  background: url('../../assets/image/cart-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+}
 /*Cart page*/
 section.cart-section {
   padding: 50px 0px;

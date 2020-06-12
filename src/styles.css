@@ -335,11 +335,11 @@ ol {
 	opacity: .7;
 }
 .hero__slider.owl-carousel .owl-dots {
-	position: absolute;
-	width: auto;
-	left: 24%;
-	bottom: 180px;
-	text-align: center;
+    position: absolute;
+    width: auto;
+    left: 20%;
+    text-align: center;
+    bottom: 28%;
 }
 
 .hero__slider.owl-carousel .owl-dots button {
@@ -357,18 +357,21 @@ ol {
 {
 	background: 0 0;
 }
+@media (min-width: 320px) and (max-width: 767px){
+	.hero__slider.owl-carousel .owl-dots {
+		bottom: 20%;
+	}
+}
 /*Inner banner start*/
 .bradcam_area{
-	height: 300px;
-    padding: 8% 0px 50px;
-    background-position: center center;
     background: #ffc824;
     overflow: hidden;
 }
 .bradcam_text {
-	padding-left: 50px;
-	font-family:'Roboto';
-	font-weight:500;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding: 150px 50px 0px 0px;
+    min-height: 300px;
 }
 .bradcam_text h3{
 	color: #ca991f;
@@ -591,4 +594,16 @@ ul.pagination li.active {
 
 ul.pagination li.active span {
     color: #fff;
+}
+.product-sub a {
+    overflow: hidden;
+    cursor: pointer;
+}
+span.span-now {
+    min-width: 100px !important;
+    text-align: center;
+    /* padding: 0px; */
+    width: 115px !important;
+    margin-right: 0px !important;
+    float: right;
 }

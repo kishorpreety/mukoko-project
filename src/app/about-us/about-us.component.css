@@ -121,3 +121,10 @@ section.our-team .headline h6 {
 .OurTeam-section .card-text{
     margin-bottom: 5px;
 }
+@media (min-width: 320px) and (max-width: 735px){
+    .vissions section{
+        width: calc(100% / 1);
+        border-left: dotted 0px;
+        border-top: dotted 1px;
+    }
+}
